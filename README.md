@@ -1,40 +1,19 @@
-PythonScrathAi
-Um agente de IA construído do zero em Python, com foco em modularidade e aprendizado prático.
+# Python Research Agent
 
-📁 Estrutura do Projeto
-O repositório contém os seguintes arquivos principais:
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 
-main.py: Script principal para execução do agente de IA.
+A command-line research assistant built with LangChain. It uses a language model and search tools to answer a research question in a structured format with a summary, sources, and tools used.
 
-tools.py: Conjunto de ferramentas auxiliares utilizadas pelo agente.
+## Setup
 
-requirements.txt: Lista de dependências necessárias para o projeto.
-
-sample.env: Exemplo de arquivo de variáveis de ambiente para configuração.
-
-🚀 Como Executar
-Clone o repositório:
-
-git clone https://github.com/httpEduardo/PythonScrathAi.git
-cd PythonScrathAi
-
-Instale as dependências:
-
+```bash
 pip install -r requirements.txt
+```
 
-Configure as variáveis de ambiente:
+Copy `sample.env` to `.env` and provide an `ANTHROPIC_API_KEY` for the model configured in `main.py`. Then run:
 
-Renomeie o arquivo sample.env para .env e ajuste os valores conforme necessário.
+```bash
+python main.py
+```
 
-Execute o agente:
-
-🧠 Funcionalidades
-Implementação de um agente de IA do zero.
-
-Estrutura modular para facilitar a manutenção e expansão.
-
-Utilização de ferramentas auxiliares para aprimorar o desempenho.
-
-🤝 Contribuições
-
-VOID
+Enter a research question when prompted. The agent requires an API key and an internet connection.
